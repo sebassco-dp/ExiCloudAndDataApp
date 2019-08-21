@@ -23,4 +23,4 @@ And now, it's time to go live, you need to generate a kubernetes deployment, and
 So, if you want to know anything about your kubernetes pods you can run this command:
 #### `kubectl get pods --namespace ibmcd`
 Now, to get access to our pod, we need to create a kubernetes service, to do that, run this command:
-#### `kubectl port-forward <YOUR APP POD NAME> 8080:80 --namespace todos`
+#### `kubectl port-forward <YOUR APP POD NAME> 8080:80 --namespace ibmcd`
