@@ -18,8 +18,8 @@ class Content extends Component {
     super(props)
 
     this.state = {
-      serviceURL: 'Set your endpoint URL',
-      apikey: 'Set your API Key',
+      serviceURL: '',
+      apikey: '',
       enemyName: '',
       teamMember: '',
       enemy: {
