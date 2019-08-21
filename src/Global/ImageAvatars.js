@@ -15,8 +15,16 @@ export default function ImageAvatars(props) {
   const classes = useStyles();
 
   return (
-    <Grid container justify="center" alignItems="center">
-      <Avatar alt={props.name} src={props.imgSrc} className={classes.bigAvatar} />
+    <Grid container
+      direction="column"
+      justify="center"
+      alignItems="center">
+      <Grid item>
+        <h2>Your enemy is: {props.name} !!</h2>
+      </Grid>
+      <Grid item>
+        <Avatar alt={props.name} src={props.imgSrc} className={classes.bigAvatar} />
+      </Grid>
     </Grid>
   );
 }
