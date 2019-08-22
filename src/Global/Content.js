@@ -35,7 +35,7 @@ class Content extends Component {
     if (enemyToFind === "") {
       alert('Please select an enemy');
     } else {
-      axios.get(this.state.serviceURL + enemyToFind, { 'headers': { 'X-IBM-Client-Id': this.state.apikey, 'Content-Type': 'application/json'} })
+      axios.get(this.state.serviceURL + 'name=' + enemyToFind + '&apikey=' + this.state.apikey)
         .then(response => {
           console.log(response);
           if (response.data.results.length > 0) {
@@ -60,7 +60,7 @@ class Content extends Component {
     if (allyToAdd === "") {
       alert('Please select an ally');
     } else {
-      axios.get(this.state.serviceURL + allyToAdd, { 'headers': { 'X-IBM-Client-Id': this.state.apikey, 'Content-Type': 'application/json' } })
+      axios.get(this.state.serviceURL + 'name=' + allyToAdd + '&apikey=' + this.state.apikey)
         .then(response => {
           console.log(response);
           if (response.data.results.length > 0) {
