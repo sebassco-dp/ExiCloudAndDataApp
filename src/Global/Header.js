@@ -24,7 +24,7 @@ class Header extends Component {
             <Logo />
           </Grid>
           <Grid item xs={12} sm={4}>
-            <h2>Make you own Dream Team</h2>
+            <h2>Make your own Dream Team</h2>
           </Grid>
           <Grid item xs={12} sm={2} className={'itemGrid'}>
           </Grid>
